@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/ghost
+hooks:
+  BeforeInstall:
+    - location: scripts/app-stop.sh
+      runas: ubuntu
+      timeout: 300
+  AfterInstall:
+    - location: scripts/app-install.sh
+      runas: ubuntu
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/app-start.sh
+      runas: ubuntu
+      timeout: 300

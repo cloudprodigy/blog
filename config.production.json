@@ -1,0 +1,29 @@
+{
+    "url": "http://18.235.28.197",
+    "server": {
+      "port": 2368,
+      "host": "127.0.0.1"
+    },
+    "database": {
+      "client": "mysql",
+      "connection": {
+        "host": "localhost",
+        "user": "ghost-716",
+        "password": "O@AqAIBEA[5j<+6H5ePT",
+        "database": "ghostdb"
+      }
+    },
+    "mail": {
+      "transport": "Direct"
+    },
+    "logging": {
+      "transports": [
+        "file",
+        "stdout"
+      ]
+    },
+    "process": "systemd",
+    "paths": {
+      "contentPath": "/var/www/ghost/content"
+    }
+  }
