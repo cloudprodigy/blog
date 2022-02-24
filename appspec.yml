@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/ghost
-file_exists_behavior: RETAIN
+file_exists_behavior: OVERRIDE
 hooks:
   BeforeInstall:
     - location: scripts/app-stop.sh
